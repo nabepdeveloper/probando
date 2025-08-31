@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PANEL DE CONTROL</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>PANEL DE CONTROL</h1>
+  <h2>INICIO DE SESIÓN</h2>
+
+  <form method="POST">
+    <div class="login-box">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" name="usuario" required>
+
+      <label for="contraseña">Contraseña</label>
+      <input type="password" id="contraseña" name="contraseña" required>
+    </div>
+
+<div class="button-container">
+  <button type="submit" class="login-button">Ingresar</button>
+</div>
+  </form>
+
+  <p style="color:red;">{{ mensaje }}</p>
+</body>
+</html>
